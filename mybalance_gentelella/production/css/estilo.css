@@ -1,0 +1,204 @@
+/*============================ layout ============================*/
+html, body, .capa{
+	height: 100%;
+}
+body{
+	
+	background: url('imagens/capa1.png')no-repeat,
+				/*url('imagens/ruido.png'),*/
+				linear-gradient(50deg,#9e4d0a,#000000);
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Helvetica, Arial, sans-serif;
+	overflow-x: hidden;
+}
+/* ---- Barra de Navegação --- */
+.img-logo{
+	height: 55px;
+	width: 200px;
+	display: block;
+	background: url('imagens/mybalance.svg') no-repeat;
+	background-size: contain; /*defini o tamanho conforme informador no css h e w*/
+	color:transparent;
+}
+nav.navbar-tranparente
+{
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6); /*Essa função deixa de forma transparete, o 0,0,0 deixa preto e 0.6 altera a opacidade*/
+	border: none;
+}
+.navbar-brand{
+	padding: 25px 15px;
+}
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;	
+}
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
+	color: #f27606;	
+	background: none;
+}
+
+/* ---- Capa principal --- */
+.capa{
+	display: table;
+	width: 100%;
+	
+}
+.texto-capa{
+	text-align: center;
+	color:white;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+/* ---- Rodape --- */
+footer{
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+.item-rede-social{
+	float: right;
+}
+/*============================= Tipografia =========================*/
+
+
+#rodape h4{
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+
+}
+
+
+/* Base CSS */
+.lojas{
+	float: left;
+	display:block;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.fix { overflow: hidden }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+p{
+	margin-top: 30px;
+	color: #f27606;
+}
+html,
+body { height: 100% }
+
+a {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #333;
+}
+a:hover { text-decoration: none }
+
+
+
+.search-box{margin:120px auto;position:absolute;}
+.caption{margin-bottom:20px; margin-top: 120px;}
+.loginForm input[type=text], .loginForm input[type=password]{
+	margin-bottom:10px;
+}
+.loginForm input[type=submit]{
+	background:#f27606;
+	color:#fff;
+	border-color: #f27606;
+	font-weight:700;
+	
+}
+
+
+#pswd_info {
+	background: #dfdfdf none repeat scroll 0 0;
+	color: #fff;
+	left: 20px;
+	position: absolute;
+	top: 115px;
+}
+#pswd_info h4{
+    background: black none repeat scroll 0 0;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 17px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+#pswd_info ul {
+    list-style: outside none none;
+}
+#pswd_info ul li {
+   padding: 10px 45px;
+}
+
+
+
+.valid {
+	background: rgba(0, 0, 0, 0) url("https://s19.postimg.org/vq43s2wib/valid.png") no-repeat scroll 2px 6px;
+	color: green;
+	line-height: 21px;
+	padding-left: 22px;
+}
+
+.invalid {
+	background: rgba(0, 0, 0, 0) url("https://s19.postimg.org/olmaj1p8z/invalid.png") no-repeat scroll 2px 6px;
+	color: red;
+	line-height: 21px;
+	padding-left: 22px;
+}
+.final{
+	
+	float: right;
+	color: #fff;
+	font-size: 10px;
+}
+
+#pswd_info::before {
+    background: #dfdfdf none repeat scroll 0 0;
+    content: "";
+    height: 25px;
+    left: -13px;
+    margin-top: -12.5px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 25px;
+}
+#pswd_info {
+    display:none;
+}
